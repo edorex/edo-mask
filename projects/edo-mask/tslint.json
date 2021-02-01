@@ -1,0 +1,18 @@
+{
+  "extends": "../../tslint.json",
+  "rules": {
+    "directive-selector": [
+      true,
+      "attribute",
+      "edoMask",
+      "camelCase"
+    ],
+    "max-line-length": false,
+    "component-selector": [
+      true,
+      "element",
+      "edo-mask",
+      "kebab-case"
+    ]
+  }
+}

@@ -1,0 +1,79 @@
+<h1>Tests with maskWhileInput ON</h1>
+
+Value={{ someNumber }},Type={{getType(someNumber)}}):
+<input
+  [(edoMaskValue)]="someNumber"
+  [edoMaskWhileInput]="true"
+  [edoMask]="edoMaskService.GetNumberMask(6)"
+/>
+Value={{ someNumber2 }},Type={{getType(someNumber2)}}):
+<input
+  [(edoMaskValue)]="someNumber2"
+  [edoKeepMask]="true"
+  [edoMaskWhileInput]="true"
+  [edoMask]="edoMaskService.GetNumberMask(6)"
+/>
+Value={{ someNumber3 }},Type={{getType(someNumber3)}}):
+<input
+  [(edoMaskValue)]="someNumber3"
+  [edoMaskWhileInput]="true"
+  [edoMask]="edoMaskService.GetNumberMask(6)"
+/>
+Value={{ phoneValue01 }},Type={{getType(phoneValue01)}}):
+<input
+  [(edoMaskValue)]="phoneValue01"
+  [edoMask]="phoneMask01"
+  [edoMaskWhileInput]="true"
+>
+Value={{ numberValue01 }},Type={{getType(numberValue01)}}):
+<input
+  [(edoMaskValue)]="numberValue01"
+  [edoMask]="numberMask01"
+  [edoMaskWhileInput]="true"
+>
+Value={{ numberValue02 }},Type={{getType(numberValue02)}}):
+<input
+  [(edoMaskValue)]="numberValue02"
+  [edoMask]="numberMask02"
+  [edoMaskWhileInput]="true"
+>
+
+<h1>Tests with maskWhileInput OFF</h1>
+
+Value={{ someNumber }},Type={{getType(someNumber)}}):
+<input
+  [(edoMaskValue)]="someNumber"
+  [edoMaskWhileInput]="false"
+  [edoMask]="edoMaskService.GetNumberMask(6)"
+/>
+Value={{ someNumber2 }},Type={{getType(someNumber2)}}):
+<input
+  [(edoMaskValue)]="someNumber2"
+  [edoKeepMask]="true"
+  [edoMaskWhileInput]="false"
+  [edoMask]="edoMaskService.GetNumberMask(6)"
+/>
+Value={{ someNumber3 }},Type={{getType(someNumber3)}}):
+<input
+  [(edoMaskValue)]="someNumber3"
+  [edoMaskWhileInput]="false"
+  [edoMask]="edoMaskService.GetNumberMask(6)"
+/>
+Value={{ phoneValue01 }},Type={{getType(phoneValue01)}}):
+<input
+  [(edoMaskValue)]="phoneValue01"
+  [edoMask]="phoneMask01"
+  [edoMaskWhileInput]="false"
+>
+Value={{ numberValue01 }},Type={{getType(numberValue01)}}):
+<input
+  [(edoMaskValue)]="numberValue01"
+  [edoMask]="numberMask01"
+  [edoMaskWhileInput]="false"
+>
+Value={{ numberValue02 }},Type={{getType(numberValue02)}}):
+<input
+  [(edoMaskValue)]="numberValue02"
+  [edoMask]="numberMask02"
+  [edoMaskWhileInput]="false"
+>
