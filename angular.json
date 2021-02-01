@@ -121,36 +121,36 @@
     },
     "EdoMask": {
       "projectType": "library",
-      "root": "projects/edo-mask",
-      "sourceRoot": "projects/edo-mask/src",
-      "prefix": "EdoMask",
+      "root": "projects/edorex/edo-mask",
+      "sourceRoot": "projects/edorex/edo-mask/src",
+      "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
-            "tsConfig": "projects/edo-mask/tsconfig.lib.json",
-            "project": "projects/edo-mask/ng-package.json"
+            "tsConfig": "projects/edorex/edo-mask/tsconfig.lib.json",
+            "project": "projects/edorex/edo-mask/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/edo-mask/tsconfig.lib.prod.json"
+              "tsConfig": "projects/edorex/edo-mask/tsconfig.lib.prod.json"
             }
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/edo-mask/src/test.ts",
-            "tsConfig": "projects/edo-mask/tsconfig.spec.json",
-            "karmaConfig": "projects/edo-mask/karma.conf.js"
+            "main": "projects/edorex/edo-mask/src/test.ts",
+            "tsConfig": "projects/edorex/edo-mask/tsconfig.spec.json",
+            "karmaConfig": "projects/edorex/edo-mask/karma.conf.js"
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "projects/edo-mask/tsconfig.lib.json",
-              "projects/edo-mask/tsconfig.spec.json"
+              "projects/edorex/edo-mask/tsconfig.lib.json",
+              "projects/edorex/edo-mask/tsconfig.spec.json"
             ],
             "exclude": [
               "**/node_modules/**"

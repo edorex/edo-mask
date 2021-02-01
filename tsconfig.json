@@ -19,6 +19,10 @@
       "edo-mask": [
         "dist/edo-mask/edo-mask",
         "dist/edo-mask"
+      ],
+      "@edorex/edo-mask": [
+        "dist/edorex/edo-mask/edorex-edo-mask",
+        "dist/edorex/edo-mask"
       ]
     }
   }

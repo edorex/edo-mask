@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { EdoMaskService } from 'edo-mask';
-import { EdoMaskGenerator } from 'edo-mask';
+import { EdoMaskService } from '@edorex/edo-mask';
+import { EdoMaskGenerator } from '@edorex/edo-mask';
 
 @Component({
   selector: 'edo-mask-root',

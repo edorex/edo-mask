@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { EdoMaskModule, I18N_TOKEN } from 'edo-mask';
+import { EdoMaskModule, I18N_TOKEN } from '@edorex/edo-mask';
 
 import { AppComponent } from './app.component';
 

@@ -1,5 +1,5 @@
 {
-  "name": "edo-mask-library",
+  "name": "@edorex/edo-mask",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -9,7 +9,13 @@
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
+  "author": "Many people",
+  "repository": {
+    "url": "https://github.com/edorex/edo-mask.git",
+    "type": "git"
+  },
   "private": true,
+  "license": "MIT",
   "dependencies": {
     "@angular/animations": "~11.0.1",
     "@angular/common": "~11.0.1",

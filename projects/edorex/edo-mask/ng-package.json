@@ -1,6 +1,6 @@
 {
-  "$schema": "../../node_modules/ng-packagr/ng-package.schema.json",
-  "dest": "../../dist/edo-mask",
+  "$schema": "../../../node_modules/ng-packagr/ng-package.schema.json",
+  "dest": "../../../dist/edorex/edo-mask",
   "lib": {
     "entryFile": "src/public-api.ts",
     "umdModuleIds": {

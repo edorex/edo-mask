@@ -25,7 +25,7 @@ module.exports = function (config) {
       suppressAll: true // removes the duplicated traces
     },
     coverageReporter: {
-      dir: require('path').join(__dirname, '../../coverage/edo-mask'),
+      dir: require('path').join(__dirname, '../../../coverage/edorex/edo-mask'),
       subdir: '.',
       reporters: [
         { type: 'html' },
