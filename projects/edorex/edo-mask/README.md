@@ -11,3 +11,9 @@ Example:
   [edoMask]="edoMaskService.GetNumberMask(6)"
 />
 ```
+
+# Credits
+
+The source is originally from https://stackoverflow.com/questions/37800841/mask-for-an-input
+
+It follows that the Licence is CC BY-SA 3.0 judging by https://stackoverflow.com/help/licensing

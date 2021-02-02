@@ -1,11 +1,12 @@
 {
   "name": "@edorex/edo-mask",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "peerDependencies": {
     "@angular/common": "^11.0.9",
     "@angular/core": "^11.0.9"
   },
   "dependencies": {
     "tslib": "^2.0.0"
-  }
+  },
+  "license": "CC BY-SA 3.0"
 }

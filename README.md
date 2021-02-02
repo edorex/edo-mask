@@ -12,7 +12,9 @@ Run `npm start` and try a few things to see if the library behaves properly
 
 ## Publish
 
-- Run `ng build EdoMask --prod`
-- Go to the `dist/edo-mask` directory
+- `rm -r dist`
+- `ng build EdoMask --prod`
+- `cd dist/edorex/edo-mask`
 - Check `npm whoami`
-- `cd dist\edorex\edo-mask`
+- Run `npm adduser` if needed
+- `npm publish --access public`
