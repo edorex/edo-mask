@@ -15,3 +15,4 @@ Run `npm start` and try a few things to see if the library behaves properly
 - Run `ng build EdoMask --prod`
 - Go to the `dist/edo-mask` directory
 - Check `npm whoami`
+- `cd dist\edorex\edo-mask`
