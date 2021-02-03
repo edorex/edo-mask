@@ -41,6 +41,9 @@ export class EdoMaskInputComponent implements ControlValueAccessor {
   @Input() public maskDefaultValue: any = null;
   // tslint:disable-next-line: max-line-length
   @Input() public isControlInvalidWithinForm = false;
+  @Input() public isSmallFormControl = false;
+  @Input() public alignTextRight = false;
+  @Input() public inputGroupAppendTextTranslationKey: string;
 
   // Placeholders for the callbacks which are later providesd
   // by the Control Value Accessor
@@ -54,8 +57,10 @@ export class EdoMaskInputComponent implements ControlValueAccessor {
   }
 
   set model(value: any) {
-    this._model = value;
-    this.changeCallback(this._model);
+    if (value !== this.model) {
+      this._model = value;
+      this.changeCallback(this._model);
+    }
   }
 
   get model() {
@@ -64,7 +69,7 @@ export class EdoMaskInputComponent implements ControlValueAccessor {
 
   writeValue(value: any): void {
     if (value !== undefined) {
-      this.model = value;
+      this._model = value;
     }
   }
 
@@ -86,5 +91,4 @@ export class EdoMaskInputComponent implements ControlValueAccessor {
   public onBlur() {
     this.touchedCallback();
   }
-
 }

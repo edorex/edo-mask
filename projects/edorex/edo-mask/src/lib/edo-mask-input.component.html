@@ -1,6 +1,12 @@
-<input type="text" #edoMaskInput class="form-control" [edoMaskDefaultValue]="maskDefaultValue" [(edoMaskValue)]="model"
-  [edoMask]="maskGenerator" [edoKeepMask]="keepMask" [edoMaskWhileInput]="maskWhileInput" [required]="required"
-  [disabled]="disabled" [ngClass]="{'is-invalid' : isControlInvalidWithinForm}">
+<div [ngClass]="{'input-group': inputGroupAppendTextTranslationKey}">
+  <input type="text" #edoMaskInput class="form-control" [edoMaskDefaultValue]="maskDefaultValue"
+    [(edoMaskValue)]="model" [edoMask]="maskGenerator" [edoKeepMask]="keepMask" [edoMaskWhileInput]="maskWhileInput"
+    [required]="required" [disabled]="disabled"
+    [ngClass]="{'is-invalid' : isControlInvalidWithinForm, 'form-control-sm': isSmallFormControl, 'text-right': alignTextRight}">
+  <div *ngIf="inputGroupAppendTextTranslationKey" class="input-group-append">
+    <span class="input-group-text">{{ inputGroupAppendTextTranslationKey | translate:lang.language }}</span>
+  </div>
+</div>
 
 <div *ngIf="isControlInvalidWithinForm" class="invalid-feedback d-block">
   {{ invalidInputTranslationKey | translate:lang.language }}</div>

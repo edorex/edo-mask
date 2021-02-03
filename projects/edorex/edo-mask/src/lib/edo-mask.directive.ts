@@ -69,7 +69,7 @@ export class EdoMaskDirective {
     }
   }
 
-  @Input('edoMaskWhileInput') public maskWhileInput = false; // if value always masked or is it unmasked while the input has the focus
+  @Input('edoMaskWhileInput') public maskWhileInput = false; // if value always maked or is it unmasked while the input has the focus
 
   // tslint:disable-next-line: no-input-rename
   @Input('edoMaskDefaultValue') public edoMaskDefaultValue: any = null;
@@ -155,8 +155,8 @@ export class EdoMaskDirective {
     });
 
     if (this.modelValue !== result.modelValue) {
-      this.edoMaskValueChangeEmitter.emit(result.modelValue);
       this.modelValue = result.modelValue;
+      this.edoMaskValueChangeEmitter.emit(result.modelValue);
     }
 
     if (result.viewValue !== viewValue) {
