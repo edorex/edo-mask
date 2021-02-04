@@ -340,8 +340,8 @@ export class EdoMaskService {
     const mask = data.maskGenerator.generateMask(data.viewValue);
 
     if (!this.isEmptyOrNull(data.viewValue)) {
-      unmaskedValue = this.unmask(data.viewValue, mask, data.i18n.language);
       maskedValue = this.mask(data.viewValue, mask, data.i18n.language);
+      unmaskedValue = this.unmask(maskedValue, mask, data.i18n.language);
 
       if (mask.startsWith('Number')) {
         cursorPosition = this.updateCursorPositionByTakingThousandSeparatorIntoAccount(data.viewValue, maskedValue, cursorPosition, data.i18n.language);
