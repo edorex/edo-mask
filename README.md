@@ -6,9 +6,31 @@ Enforces number and phone number formats
 
 Run `ng build EdoMask` to build the library 
 
-## Test
+## Test locally
 
-Run `npm start` and try a few things to see if the library behaves properly
+- `ng build EdoMask --prod`
+- `ng start`
+
+## Test in a Project
+
+You can use `npm link` for this. Basically it lets you use an unpublished local version.
+
+Here:
+- `ng build EdoMask --prod`
+- `cd dist/edorex/edo-mask`
+- `npm link`
+
+In the Project:
+- `npm uninstall @edorex/edo-mask --no-save`
+- `npm link @edorex/edo-mask`
+
+After you're done testing (still in the Project):
+- `npm uninstall @edorex/edo-mask --no-save`
+- `npm install`
+
+Here (again):
+- `cd dist/edorex/edo-mask`
+- `npm unlink`
 
 ## Publish
 
