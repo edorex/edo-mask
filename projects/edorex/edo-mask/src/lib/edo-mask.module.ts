@@ -1,21 +1,15 @@
 import { NgModule } from '@angular/core';
-import { EdoMaskInputComponent } from './edo-mask-input.component';
 import { EdoMaskDirective } from './edo-mask.directive';
-import { BrowserModule } from '@angular/platform-browser';
-
-
-
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
-    EdoMaskInputComponent,
     EdoMaskDirective
   ],
   imports: [
-    BrowserModule
+    CommonModule
   ],
   exports: [
-    EdoMaskInputComponent,
     EdoMaskDirective
   ]
 })

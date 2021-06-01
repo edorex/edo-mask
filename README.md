@@ -9,7 +9,7 @@ Run `ng build EdoMask` to build the library
 ## Test locally
 
 - `ng build EdoMask --prod`
-- `ng start`
+- `npm start`
 
 ## Test in a Project
 

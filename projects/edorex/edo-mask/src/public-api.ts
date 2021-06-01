@@ -3,7 +3,6 @@
  */
 
 export * from './lib/edo-mask.service';
-export * from './lib/edo-mask-input.component';
 export * from './lib/edo-mask.directive';
 export * from './lib/edo-mask.generator';
 export * from './lib/edo-mask.module';
